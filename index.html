@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIET Central Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo-placeholder.png" alt="KIET Logo" class="logo">
+        <h1>KIET Central Library</h1>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for books...">
+    </div>
+
+    <div class="book-catalog">
+        <!-- Books will be dynamically listed here -->
+    </div>
+
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <button id="buy-button" onclick="buyItems()">Buy/Issue</button>
+    </div>
+
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p><strong>Author(s): </strong><span id="modal-author"></span></p>
+            <p><strong>ISBN: </strong><span id="modal-isbn"></span></p>
+            <p><strong>Publisher: </strong><span id="modal-publisher"></span></p>
+            <p><strong>Year: </strong><span id="modal-year"></span></p>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
